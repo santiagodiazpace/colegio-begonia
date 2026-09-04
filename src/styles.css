@@ -1,1 +1,1 @@
-/* You can add global styles to this file, and also import other style files */
+:root{--ink:#172d28;--green:#315e52;--deep:#1d4038;--cream:#f7f4ed;--gold:#d5aa5c;--blue:#35566b;--line:#dce0dc}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);font-family:'DM Sans',Arial,sans-serif}a{color:inherit}.shell{width:min(1160px,calc(100% - 48px));margin:auto}
