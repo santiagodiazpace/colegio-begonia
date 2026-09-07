@@ -9,19 +9,21 @@
       <a href="#inicio" (click)="closeMenu()">Inicio</a
       ><a href="#institucion" (click)="closeMenu()">Institución</a
       ><span
-        ><a href="#colegios">Martín Rodríguez</a
+        ><a href="#colegios">Colegio M. Rodríguez</a
         ><em
-          ><a href="#niveles">Jardín Sta. Cecilia</a
-          ><a href="#niveles">Primaria</a><a href="#niveles">Secundaria</a></em
+          ><a href="#niveles">Nivel Inicial</a
+          ><a href="#niveles">Nivel Primario</a><a href="#niveles">Nivel Secundario</a></em
         ></span
       ><span
-        ><a href="#colegios">Begoña</a
+        ><a href="#colegios">Colegio Ntra. Sra. Begoña</a
         ><em
-          ><a href="#niveles">Guardería</a><a href="#niveles">Jardín</a
-          ><a href="#niveles">Primaria</a><a href="#niveles">Secundaria</a></em
+          ><a href="#niveles">Guardería</a><a href="#niveles">Nivel Inicial</a
+          ><a href="#niveles">Nivel Primario</a><a href="#niveles">Nivel Secundario</a></em
         ></span
-      ><a href="#familias">Familias</a><a href="#noticias">Noticias</a
-      ><a href="#contacto">Contacto</a>
+      ><a href="#familias">Familias</a>
+      <a href="#noticias">Noticias</a>
+      <a href="#parroquia">Parroquia</a>
+      <a href="#contacto">Contacto</a>
     </div>
   </nav>
 </header>
@@ -29,7 +31,6 @@
   <section class="hero placeholder" id="inicio">
     <div class="shade"></div>
     <div class="shell hero-copy">
-      <p class="eyebrow light">DOS COLEGIOS, UNA MISMA COMUNIDAD</p>
       <h1>Educamos, acompañamos<br />y formamos comunidad.</h1>
       <p>
         Una propuesta educativa que integra formación académica, valores y
@@ -71,17 +72,17 @@
             <small>IMAGEN COLEGIO MARTÍN RODRÍGUEZ</small><i>MR</i>
           </div>
           <div class="school-copy">
-            <small>COLEGIO</small>
+            <small>UNIDAD ACADÉMICA</small>
             <h3>Brigadier General<br />Martín Rodríguez</h3>
             <p>
               Un espacio para aprender, crecer y construir vínculos que
               acompañan toda la vida.
             </p>
             <div class="chips">
-              <span>Jardín Sta. Cecilia</span><span>Primaria</span
-              ><span>Secundaria</span>
+              <span>Nivel Inicial</span><span>Nivel Primario</span
+              ><span>Nivel Secundario</span>
             </div>
-            <a href="#niveles">CONOCER EL COLEGIO →</a>
+            <a href="#niveles">CONOCER MÁS →</a>
           </div>
         </article>
         <article class="school blue">
@@ -89,17 +90,17 @@
             <small>IMAGEN COLEGIO BEGOÑA</small><i>NB</i>
           </div>
           <div class="school-copy">
-            <small>COLEGIO</small>
+            <small>UNIDAD ACADÉMICA</small>
             <h3>Nuestra Señora<br />de Begoña</h3>
             <p>
               Una comunidad cercana que educa desde los primeros pasos hasta la
               formación secundaria.
             </p>
             <div class="chips">
-              <span>Guardería</span><span>Jardín</span><span>Primaria</span
-              ><span>Secundaria</span>
+              <span>Guardería</span><span>Nivel Inicial</span><span>Nivel Primario</span
+              ><span>Nivel Secundario</span>
             </div>
-            <a href="#niveles">CONOCER EL COLEGIO →</a>
+            <a href="#niveles">CONOCER MÁS →</a>
           </div>
         </article>
       </div>
@@ -115,7 +116,7 @@
         <p class="eyebrow">NUESTRA IDENTIDAD</p>
         <h2>Una educación que deja huella</h2>
         <p class="lead">
-          Somos una comunidad educativa del Obispado de Azul comprometida con el
+          Somos una comunidad educativa del Obispado de Azul, en la ciudad de Tandil, comprometida con el
           desarrollo integral de cada estudiante.
         </p>
         <p>
@@ -159,11 +160,6 @@
           >
         }
       </div>
-      <div class="center">
-        <a class="under" href="#contacto"
-          >VER TODA LA INFORMACIÓN PARA FAMILIAS →</a
-        >
-      </div>
     </div>
   </section>
   <section class="section levels" id="niveles">
@@ -177,12 +173,11 @@
         </p>
       </div>
       <div class="level-grid">
-        @for (level of levels; track level[1]; let i = $index) {
+        @for (level of levels; track level[0]) {
           <article>
-            <small>0{{ i + 1 }}</small
-            ><i>{{ level[0] }}</i>
-            <h3>{{ level[1] }}</h3>
-            <p>{{ level[2] }}</p>
+            <span class="level-icon" aria-hidden="true"></span>
+            <h3>{{ level[0] }}</h3>
+            <p>{{ level[1] }}</p>
             <a href="#contacto">→</a>
           </article>
         }

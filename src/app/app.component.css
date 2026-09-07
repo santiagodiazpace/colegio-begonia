@@ -395,7 +395,6 @@ nav button {
 .split ol {
   padding: 0;
   list-style: none;
-  counter-reset: item;
   margin: 28px 0;
 }
 .split li {
@@ -405,12 +404,27 @@ nav button {
   font-size: 14px;
 }
 .split li:before {
-  counter-increment: item;
-  content: "0" counter(item);
+  content: "";
   position: absolute;
   left: 0;
+  top: 12px;
+  width: 23px;
+  height: 23px;
+  border: 1px solid #d5aa5c;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
   color: #a87e38;
-  font-size: 11px;
+  font: 14px/1 Georgia, serif;
+}
+.split li:nth-child(1):before {
+  content: "✦";
+}
+.split li:nth-child(2):before {
+  content: "⌂";
+}
+.split li:nth-child(3):before {
+  content: "◇";
 }
 .split li span {
   display: block;
@@ -512,19 +526,34 @@ nav button {
   padding: 27px;
   position: relative;
   border-right: 1px solid #fff3;
+  transition: background-color 0.22s ease;
+}
+.level-grid article:hover {
+  background-color: #ffffff0a;
 }
 .level-grid article:last-child {
   border: 0;
 }
-.level-grid small {
-  color: #a9beb6;
-}
-.level-grid i {
+.level-icon {
   display: block;
-  color: var(--gold);
-  font-size: 32px;
-  margin: 38px 0 17px;
-  font-style: normal;
+  width: 58px;
+  height: 58px;
+  margin: 4px 0 22px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.level-grid article:nth-child(1) .level-icon {
+  background-image: url("../assets/iconos/guarderia.png");
+}
+.level-grid article:nth-child(2) .level-icon {
+  background-image: url("../assets/iconos/jardin.png");
+}
+.level-grid article:nth-child(3) .level-icon {
+  background-image: url("../assets/iconos/primaria.png");
+}
+.level-grid article:nth-child(4) .level-icon {
+  background-image: url("../assets/iconos/secundaria.png");
 }
 .level-grid h3 {
   font-size: 25px;
@@ -890,7 +919,6 @@ footer {
 .contacts a,
 .news section > a,
 .identity-img,
-.split li:before,
 .news article > div,
 .events article p,
 .footer-grid > div > b {
