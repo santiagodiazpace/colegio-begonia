@@ -461,6 +461,21 @@ nav button {
   place-items: center;
   color: var(--green);
   font-style: normal;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 25px;
+}
+.quick > a:nth-child(1) i {
+  background-image: url("../assets/iconos/inscripciones.svg");
+}
+.quick > a:nth-child(2) i {
+  background-image: url("../assets/iconos/pagos.svg");
+}
+.quick > a:nth-child(3) i {
+  background-image: url("../assets/iconos/documentacion.svg");
+}
+.quick > a:nth-child(4) i {
+  background-image: url("../assets/iconos/calendario.svg");
 }
 .quick h3 {
   font-size: 22px;
