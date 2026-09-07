@@ -162,7 +162,7 @@
           <p class="eyebrow">ACTUALIDAD</p>
           <h2>Noticias de nuestra comunidad</h2>
         </div>
-        <a class="under text-link keep-color" href="#noticias">VER TODAS LAS NOTICIAS</a>
+        <a class="under text-link keep-color" routerLink="/noticias">VER TODAS LAS NOTICIAS</a>
       </div>
       <div class="news">
         @for (item of news; track item[2]; let i = $index) {
@@ -177,7 +177,7 @@
                 Compartimos una nueva experiencia junto a estudiantes, docentes
                 y familias de nuestra comunidad.
               </p>
-              <a class="text-link" href="#contacto">LEER MÁS</a>
+              <a class="text-link keep-color" href="#contacto">LEER MÁS</a>
             </section>
           </article>
         }

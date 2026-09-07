@@ -1,0 +1,32 @@
+<main class="news-page">
+  <section class="section news-archive">
+    <div class="shell">
+      <a class="back-link" routerLink="/" fragment="noticias">← VOLVER</a>
+
+      <div class="news-archive-heading">
+        <p class="eyebrow">ACTUALIDAD</p>
+        <h1>Todas las noticias</h1>
+        <p>
+          Experiencias, proyectos y novedades de nuestras comunidades
+          educativas.
+        </p>
+      </div>
+
+      <div class="news-archive-grid">
+        @for (item of news; track item.title; let i = $index) {
+          <article [class.featured]="i === 0">
+            <div class="placeholder news-archive-image">
+              <small>IMAGEN DE LA NOTICIA</small>
+            </div>
+            <div class="news-archive-copy">
+              <small>{{ item.category }} <time>{{ item.date }}</time></small>
+              <h2>{{ item.title }}</h2>
+              <p>{{ item.summary }}</p>
+              <a class="text-link keep-color" routerLink="/">LEER MÁS</a>
+            </div>
+          </article>
+        }
+      </div>
+    </div>
+  </section>
+</main>

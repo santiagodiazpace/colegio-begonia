@@ -28,3 +28,20 @@
 .concept-grid article>span{display:grid;place-items:center;width:34px;height:34px;margin-bottom:19px;border:1px solid var(--gold);border-radius:50%;color:#a77729;font-style:normal}
 @media(max-width:900px){.mission-card{grid-template-columns:1fr;gap:16px}.institutional-columns{grid-template-columns:1fr;gap:48px}.concept-grid{grid-template-columns:1fr;gap:28px}.concept-grid article,.concept-grid article:first-child,.concept-grid article:last-child{padding:0 0 28px;border-right:0;border-bottom:1px solid #d9d6cc}.concept-grid article:last-child{padding-bottom:0;border-bottom:0}}
 @media(max-width:600px){.detail-heading h2{font-size:38px}.mission-card,.school-concept{padding:30px 24px}.mission-card p{font-size:19px}.institutional-detail{scroll-margin-top:98px}}
+
+.news-page{min-height:70vh;background:var(--cream)}
+.news-archive{scroll-margin-top:108px}
+.news-archive-heading{max-width:760px;margin-bottom:48px}
+.news-archive-heading h1{font:400 54px/1.05 Georgia,serif;letter-spacing:-.03em;margin:0 0 18px}
+.news-archive-heading>p:last-child{max-width:580px;color:#66756f;font-size:15px;line-height:1.7}
+.news-archive-grid{display:grid;grid-template-columns:1fr;gap:24px}
+.news-archive-grid>article{display:grid;grid-template-columns:40% 1fr;background:#fff;border:1px solid var(--line);transition:transform .22s ease,box-shadow .22s ease}
+.news-archive-grid>article:hover{transform:translateY(-3px);box-shadow:0 16px 36px #17382f14}
+.news-archive-image{min-height:280px;display:grid;place-items:center;color:#68756f;font-size:11px}
+.news-archive-copy{padding:30px;display:flex;flex-direction:column;align-items:flex-start}
+.news-archive-copy>small{width:100%;font-size:12px;font-weight:700;color:var(--green)}
+.news-archive-copy time{float:right;color:#7f8a85}
+.news-archive-copy h2{font:400 31px/1.2 Georgia,serif;margin:16px 0 12px}
+.news-archive-copy p{font-size:14px;line-height:1.7;color:#687670;margin:0 0 26px}
+.news-archive-copy .text-link{margin-top:auto;color:var(--ink);font-size:13px;font-weight:700;letter-spacing:.1em}
+@media(max-width:700px){.news-archive-grid>article{display:block}.news-archive-image{min-height:235px}.news-archive-heading h1{font-size:42px}.news-archive-copy h2{font-size:29px}}
