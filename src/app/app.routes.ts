@@ -2,6 +2,7 @@ import { Routes } from '@angular/router';
 import { HomeComponent } from './home.component';
 import { InstitutionalComponent } from './institutional.component';
 import { NewsComponent } from './news.component';
+import { CalendarComponent } from './calendar.component';
 
 export const routes: Routes = [
   { path: '', component: HomeComponent, title: 'Unidades Académicas' },
@@ -14,6 +15,11 @@ export const routes: Routes = [
     path: 'noticias',
     component: NewsComponent,
     title: 'Noticias | Unidades Académicas',
+  },
+  {
+    path: 'calendario',
+    component: CalendarComponent,
+    title: 'Calendario | Unidades Académicas',
   },
   { path: '**', redirectTo: '' },
 ];

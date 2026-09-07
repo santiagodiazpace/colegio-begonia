@@ -45,3 +45,28 @@
 .news-archive-copy p{font-size:14px;line-height:1.7;color:#687670;margin:0 0 26px}
 .news-archive-copy .text-link{margin-top:auto;color:var(--ink);font-size:13px;font-weight:700;letter-spacing:.1em}
 @media(max-width:700px){.news-archive-grid>article{display:block}.news-archive-image{min-height:235px}.news-archive-heading h1{font-size:42px}.news-archive-copy h2{font-size:29px}}
+
+.calendar-page{min-height:70vh;background:var(--cream)}
+.calendar-archive{scroll-margin-top:108px}
+.calendar-heading{display:grid;grid-template-columns:1.4fr .7fr;gap:70px;align-items:end;margin-bottom:42px}
+.calendar-heading h1{font:400 54px/1.05 Georgia,serif;letter-spacing:-.03em;margin:0}
+.calendar-heading>p{font-size:15px;line-height:1.7;color:#66756f;margin:0 0 4px}
+.calendar-year{display:flex;align-items:center;justify-content:space-between;padding:18px 24px;background:var(--gold);color:var(--ink);margin-bottom:20px}
+.calendar-year span{font-size:12px;font-weight:700;letter-spacing:.16em}
+.calendar-year b{font:30px/1 Georgia,serif}
+.calendar-list{display:grid;gap:14px}
+.calendar-list>article{display:grid;grid-template-columns:115px 1fr auto;gap:34px;align-items:center;background:#fff;border:1px solid var(--line);padding:30px 34px;transition:transform .22s ease,box-shadow .22s ease,background-color .22s ease}
+.calendar-list>article:hover{transform:translateY(-2px);box-shadow:0 14px 34px #17382f12;background:#fffefa}
+.calendar-list time{display:flex;flex-direction:column;align-items:center;padding-right:30px;border-right:1px solid var(--line);color:#a77729}
+.calendar-list time>b{font:48px/.9 Georgia,serif;color:var(--ink)}
+.calendar-list time>span{font-size:13px;font-weight:700;letter-spacing:.14em;margin-top:8px}
+.calendar-list time>small{font-size:11px;color:#7f8a85;margin-top:4px}
+.calendar-event-copy>small{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--green)}
+.calendar-event-copy h2{font:400 28px/1.2 Georgia,serif;margin:8px 0 10px}
+.calendar-event-copy>p{max-width:700px;font-size:14px;line-height:1.65;color:#687670;margin:0 0 18px}
+.event-details{display:flex;flex-wrap:wrap;gap:12px 34px}
+.event-details span{font-size:10px;font-weight:700;letter-spacing:.1em;color:#8a958f}
+.event-details b{display:block;margin-top:4px;font-size:13px;letter-spacing:0;color:var(--ink)}
+.calendar-mark{display:grid;place-items:center;width:36px;height:36px;border:1px solid var(--gold);border-radius:50%;color:#a77729}
+@media(max-width:750px){.calendar-heading{grid-template-columns:1fr;gap:18px}.calendar-heading h1{font-size:42px}.calendar-list>article{grid-template-columns:70px 1fr;gap:22px;padding:26px 22px}.calendar-list time{padding-right:20px}.calendar-list time>b{font-size:40px}.calendar-mark{display:none}}
+@media(max-width:500px){.calendar-list>article{grid-template-columns:1fr}.calendar-list time{align-items:flex-start;border-right:0;border-bottom:1px solid var(--line);padding:0 0 18px}.calendar-list time>span,.calendar-list time>small{margin-left:2px}}

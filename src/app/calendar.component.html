@@ -1,0 +1,45 @@
+<main class="calendar-page">
+  <section class="section calendar-archive">
+    <div class="shell">
+      <a class="back-link" routerLink="/" fragment="agenda">← VOLVER</a>
+
+      <div class="calendar-heading">
+        <div>
+          <p class="eyebrow">AGENDA INSTITUCIONAL</p>
+          <h1>Calendario de actividades</h1>
+        </div>
+        <p>
+          Todas las fechas importantes, encuentros y propuestas de nuestras
+          comunidades educativas.
+        </p>
+      </div>
+
+      <div class="calendar-year">
+        <span>CICLO LECTIVO</span>
+        <b>2027</b>
+      </div>
+
+      <div class="calendar-list">
+        @for (event of events; track event.day + event.title) {
+          <article>
+            <time>
+              <b>{{ event.day }}</b>
+              <span>{{ event.month }}</span>
+              <small>{{ event.year }}</small>
+            </time>
+            <div class="calendar-event-copy">
+              <small>{{ event.institution }}</small>
+              <h2>{{ event.title }}</h2>
+              <p>{{ event.detail }}</p>
+              <div class="event-details">
+                <span>HORARIO <b>{{ event.time }}</b></span>
+                <span>LUGAR <b>{{ event.place }}</b></span>
+              </div>
+            </div>
+            <span class="calendar-mark" aria-hidden="true">✦</span>
+          </article>
+        }
+      </div>
+    </div>
+  </section>
+</main>
