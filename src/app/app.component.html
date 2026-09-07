@@ -1,283 +1,37 @@
 <header [class.open]="menuOpen">
   <div class="utility"></div>
   <nav class="shell">
-    <a class="brand" href="#inicio"
+    <a class="brand" routerLink="/" fragment="inicio"
       ><i>✦</i
       ><span><b>UNIDADES ACADÉMICAS</b><small>OBISPADO DE AZUL</small></span></a
     ><button (click)="toggleMenu()" aria-label="Abrir menú">☰</button>
     <div class="links">
-      <a href="#inicio" (click)="closeMenu()">Inicio</a
-      ><a href="#institucion" (click)="closeMenu()">Institución</a
+      <a routerLink="/" fragment="inicio" (click)="closeMenu()">Inicio</a
+      ><a routerLink="/" fragment="institucion" (click)="closeMenu()">Institución</a
       ><span
-        ><a href="#colegios">Colegio M. Rodríguez</a
+        ><a routerLink="/" fragment="colegios">Colegio M. Rodríguez</a
         ><em
-          ><a href="#niveles">Nivel Inicial</a
-          ><a href="#niveles">Nivel Primario</a><a href="#niveles">Nivel Secundario</a></em
+          ><a routerLink="/" fragment="niveles">Nivel Inicial</a
+          ><a routerLink="/" fragment="niveles">Nivel Primario</a><a routerLink="/" fragment="niveles">Nivel Secundario</a></em
         ></span
       ><span
-        ><a href="#colegios">Colegio Ntra. Sra. Begoña</a
+        ><a routerLink="/" fragment="colegios">Colegio Ntra. Sra. Begoña</a
         ><em
-          ><a href="#niveles">Guardería</a><a href="#niveles">Nivel Inicial</a
-          ><a href="#niveles">Nivel Primario</a><a href="#niveles">Nivel Secundario</a></em
+          ><a routerLink="/" fragment="niveles">Guardería</a><a routerLink="/" fragment="niveles">Nivel Inicial</a
+          ><a routerLink="/" fragment="niveles">Nivel Primario</a><a routerLink="/" fragment="niveles">Nivel Secundario</a></em
         ></span
-      ><a href="#familias">Familias</a>
-      <a href="#noticias">Noticias</a>
-      <a href="#parroquia">Parroquia</a>
-      <a href="#contacto">Contacto</a>
+      ><a routerLink="/" fragment="familias">Familias</a>
+      <a routerLink="/" fragment="noticias">Noticias</a>
+      <a routerLink="/" fragment="parroquia">Parroquia</a>
+      <a routerLink="/" fragment="contacto">Contacto</a>
     </div>
   </nav>
 </header>
-<main>
-  <section class="hero placeholder" id="inicio">
-    <div class="shade"></div>
-    <div class="shell hero-copy">
-      <h1>Educamos, acompañamos<br />y formamos comunidad.</h1>
-      <p>
-        Una propuesta educativa que integra formación académica, valores y
-        compromiso con cada familia.
-      </p>
-      <div>
-        <a class="btn white hero-action" href="#colegios">CONOCÉ NUESTROS COLEGIOS</a
-        ><a class="btn white hero-action" href="#institucion">NUESTRA PROPUESTA</a>
-      </div>
-    </div>
-  </section>
-  <section class="admissions">
-    <div class="shell">
-      <i>✦</i>
-      <div>
-        <small>INSCRIPCIONES</small>
-        <h2>Ciclo Lectivo 2027</h2>
-        <p>
-          Conocé los requisitos, fechas y proceso de inscripción para cada nivel
-          educativo.
-        </p>
-      </div>
-      <a class="btn outline hero-action" href="#familias">VER INSCRIPCIONES</a>
-    </div>
-  </section>
-  <section class="section" id="colegios">
-    <div class="shell">
-      <div class="heading">
-        <p class="eyebrow">NUESTRAS UNIDADES ACADÉMICAS</p>
-        <h2>Elegí tu comunidad educativa</h2>
-        <p>
-          Dos instituciones con identidad propia, unidas por una misma misión y
-          propuesta de formación integral.
-        </p>
-      </div>
-      <div class="schools">
-        <article class="school green">
-          <div class="placeholder photo">
-            <small>IMAGEN COLEGIO MARTÍN RODRÍGUEZ</small><i>MR</i>
-          </div>
-          <div class="school-copy">
-            <small>UNIDAD ACADÉMICA</small>
-            <h3>Brigadier General<br />Martín Rodríguez</h3>
-            <p>
-              Un espacio para aprender, crecer y construir vínculos que
-              acompañan toda la vida.
-            </p>
-            <div class="chips">
-              <span>Nivel Inicial</span><span>Nivel Primario</span
-              ><span>Nivel Secundario</span>
-            </div>
-            <a href="#niveles">CONOCER MÁS →</a>
-          </div>
-        </article>
-        <article class="school blue">
-          <div class="placeholder photo">
-            <small>IMAGEN COLEGIO BEGOÑA</small><i>NB</i>
-          </div>
-          <div class="school-copy">
-            <small>UNIDAD ACADÉMICA</small>
-            <h3>Nuestra Señora<br />de Begoña</h3>
-            <p>
-              Una comunidad cercana que educa desde los primeros pasos hasta la
-              formación secundaria.
-            </p>
-            <div class="chips">
-              <span>Guardería</span><span>Nivel Inicial</span><span>Nivel Primario</span
-              ><span>Nivel Secundario</span>
-            </div>
-            <a href="#niveles">CONOCER MÁS →</a>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-  <section class="section identity" id="institucion">
-    <div class="shell split">
-      <div class="placeholder identity-img">
-        <small>IMAGEN DE NUESTRA COMUNIDAD</small>
-        <div><b>2</b><span>unidades<br />académicas</span></div>
-      </div>
-      <div>
-        <p class="eyebrow">NUESTRA IDENTIDAD</p>
-        <h2>Una educación que deja huella</h2>
-        <p class="lead">
-          Somos una comunidad educativa del Obispado de Azul, en la ciudad de Tandil, comprometida con el
-          desarrollo integral de cada estudiante.
-        </p>
-        <p>
-          Combinamos excelencia académica, formación humana y una mirada atenta
-          a las necesidades de nuestro tiempo.
-        </p>
-        <ol>
-          <li>
-            <b>Educación integral</b
-            ><span>Desarrollamos todas las dimensiones de la persona.</span>
-          </li>
-          <li>
-            <b>Comunidad cercana</b
-            ><span>Familias y escuela, construyendo juntos.</span>
-          </li>
-          <li>
-            <b>Valores que guían</b
-            ><span>Respeto, compromiso, solidaridad y fe.</span>
-          </li>
-        </ol>
-        <a class="btn dark hero-action" href="#contacto">CONOCÉ NUESTRA INSTITUCIÓN</a>
-      </div>
-    </div>
-  </section>
-  <section class="section" id="familias">
-    <div class="shell">
-      <div class="title-row">
-        <div>
-          <p class="eyebrow">INFORMACIÓN ÚTIL</p>
-          <h2>Accesos rápidos para familias</h2>
-        </div>
-        <p>Todo lo que necesitás, en un solo lugar.</p>
-      </div>
-      <div class="quick">
-        @for (item of quickLinks; track item[1]) {
-          <a href="#contacto"
-            ><i></i>
-            <h3>{{ item[1] }}</h3>
-            <p>{{ item[2] }}</p>
-            <b>↗</b></a
-          >
-        }
-      </div>
-    </div>
-  </section>
-  <section class="section levels" id="niveles">
-    <div class="shell">
-      <div class="heading">
-        <p class="eyebrow light">TRAYECTORIA EDUCATIVA</p>
-        <h2>Te acompañamos en cada etapa</h2>
-        <p>
-          Una propuesta que crece con cada estudiante y lo prepara para sus
-          próximos desafíos.
-        </p>
-      </div>
-      <div class="level-grid">
-        @for (level of levels; track level[0]) {
-          <article>
-            <span class="level-icon" aria-hidden="true"></span>
-            <h3>{{ level[0] }}</h3>
-            <p>{{ level[1] }}</p>
-            <a href="#contacto">→</a>
-          </article>
-        }
-      </div>
-    </div>
-  </section>
-  <section class="section" id="noticias">
-    <div class="shell">
-      <div class="title-row">
-        <div>
-          <p class="eyebrow">ACTUALIDAD</p>
-          <h2>Noticias de nuestra comunidad</h2>
-        </div>
-        <a class="under" href="#noticias">VER TODAS LAS NOTICIAS →</a>
-      </div>
-      <div class="news">
-        @for (item of news; track item[2]; let i = $index) {
-          <article [class.featured]="i === 0">
-            <div class="placeholder"><small>IMAGEN DE LA NOTICIA</small></div>
-            <section>
-              <small
-                >{{ item[0] }} <time>{{ item[1] }}</time></small
-              >
-              <h3>{{ item[2] }}</h3>
-              <p>
-                Compartimos una nueva experiencia junto a estudiantes, docentes
-                y familias de nuestra comunidad.
-              </p>
-              <a href="#contacto">LEER MÁS →</a>
-            </section>
-          </article>
-        }
-      </div>
-    </div>
-  </section>
-  <section class="events">
-    <div class="shell">
-      <div>
-        <p class="eyebrow light">AGENDA</p>
-        <h2>Próximos<br />eventos</h2>
-        <a class="under" href="#contacto">VER CALENDARIO COMPLETO →</a>
-      </div>
-      <div>
-        @for (event of events; track event[3]) {
-          <article>
-            <time
-              ><b>{{ event[0] }}</b
-              >{{ event[1] }}</time
-            >
-            <div>
-              <small>{{ event[2] }}</small>
-              <h3>{{ event[3] }}</h3>
-              <p>18:00 h · Lugar a confirmar</p>
-            </div>
-            <a href="#contacto">→</a>
-          </article>
-        }
-      </div>
-    </div>
-  </section>
-  <section class="section identity" id="contacto">
-    <div class="shell">
-      <div class="heading">
-        <p class="eyebrow">ESTAMOS CERCA</p>
-        <h2>Contactanos</h2>
-        <p>Elegí la institución con la que querés comunicarte.</p>
-      </div>
-      <div class="contacts">
-        <article>
-          <i class="green">MR</i>
-          <div>
-            <small>COLEGIO</small>
-            <h3>Brigadier General Martín Rodríguez</h3>
-            <p>
-              ⌖ Dirección a completar, Tandil<br />☎ (0249) 000-0000<br />✉
-              contacto&#64;colegio.edu.ar
-            </p>
-            <a href="mailto:contacto@colegio.edu.ar">VER DATOS Y UBICACIÓN →</a>
-          </div>
-        </article>
-        <article>
-          <i class="blue">NB</i>
-          <div>
-            <small>COLEGIO</small>
-            <h3>Nuestra Señora de Begoña</h3>
-            <p>
-              ⌖ Dirección a completar, Tandil<br />☎ (0249) 000-0000<br />✉
-              contacto&#64;colegio.edu.ar
-            </p>
-            <a href="mailto:contacto@colegio.edu.ar">VER DATOS Y UBICACIÓN →</a>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-</main>
+<router-outlet></router-outlet>
 <footer>
   <div class="shell footer-grid">
     <div>
-      <a class="brand" href="#inicio"
+      <a class="brand" routerLink="/" fragment="inicio"
         ><i>✦</i
         ><span
           ><b>UNIDADES ACADÉMICAS</b><small>OBISPADO DE AZUL</small></span
@@ -286,14 +40,14 @@
       <p class="frase">Educamos, acompañamos y formamos comunidad.</p>
     </div>
     <div>
-      <b>EXPLORÁ</b><a href="#institucion">Institución</a
-      ><a href="#colegios">Nuestros colegios</a><a href="#familias">Familias</a
-      ><a href="#noticias">Noticias</a>
+      <b>EXPLORÁ</b><a routerLink="/" fragment="institucion">Institución</a
+      ><a routerLink="/" fragment="colegios">Nuestros colegios</a><a routerLink="/" fragment="familias">Familias</a
+      ><a routerLink="/" fragment="noticias">Noticias</a>
     </div>
     <div>
-      <b>FAMILIAS</b><a href="#familias">Inscripciones</a
-      ><a href="#familias">Cuotas</a><a href="#familias">Documentación</a
-      ><a href="#familias">Calendario</a>
+      <b>FAMILIAS</b><a routerLink="/" fragment="familias">Inscripciones</a
+      ><a routerLink="/" fragment="familias">Cuotas</a><a routerLink="/" fragment="familias">Documentación</a
+      ><a routerLink="/" fragment="familias">Calendario</a>
     </div>
     <div>
       <b>CONTACTO</b>
