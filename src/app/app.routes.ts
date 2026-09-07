@@ -3,6 +3,7 @@ import { HomeComponent } from './home.component';
 import { InstitutionalComponent } from './institutional.component';
 import { NewsComponent } from './news.component';
 import { CalendarComponent } from './calendar.component';
+import { ParishComponent } from './parish.component';
 
 export const routes: Routes = [
   { path: '', component: HomeComponent, title: 'Unidades Académicas' },
@@ -20,6 +21,11 @@ export const routes: Routes = [
     path: 'calendario',
     component: CalendarComponent,
     title: 'Calendario | Unidades Académicas',
+  },
+  {
+    path: 'parroquia',
+    component: ParishComponent,
+    title: 'Parroquia | Unidades Académicas',
   },
   { path: '**', redirectTo: '' },
 ];

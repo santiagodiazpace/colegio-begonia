@@ -70,3 +70,50 @@
 .calendar-mark{display:grid;place-items:center;width:36px;height:36px;border:1px solid var(--gold);border-radius:50%;color:#a77729}
 @media(max-width:750px){.calendar-heading{grid-template-columns:1fr;gap:18px}.calendar-heading h1{font-size:42px}.calendar-list>article{grid-template-columns:70px 1fr;gap:22px;padding:26px 22px}.calendar-list time{padding-right:20px}.calendar-list time>b{font-size:40px}.calendar-mark{display:none}}
 @media(max-width:500px){.calendar-list>article{grid-template-columns:1fr}.calendar-list time{align-items:flex-start;border-right:0;border-bottom:1px solid var(--line);padding:0 0 18px}.calendar-list time>span,.calendar-list time>small{margin-left:2px}}
+
+.parish-page{background:#fff}
+.parish-hero{height:620px;position:relative;display:flex;align-items:center;color:#fff;background:url("assets/images/parroquia_begonia.png") center/cover no-repeat}
+.parish-shade{position:absolute;inset:0;background:linear-gradient(90deg,#142f29e8 0%,#173b32a8 48%,#173b3224 78%)}
+.parish-hero-copy{position:relative;padding-top:24px}
+.parish-back{display:inline-flex;margin-bottom:74px;color:#e8f1ed;font-size:11px;font-weight:700;letter-spacing:.1em;text-decoration:none;transition:transform .2s ease,color .2s ease}
+.parish-back:hover{color:var(--gold);transform:translateX(-3px)}
+.parish-hero h1{max-width:700px;font:400 62px/1.04 Georgia,serif;letter-spacing:-.035em;margin:0 0 24px}
+.parish-hero-copy>p:last-child{max-width:590px;font-size:17px;line-height:1.7;color:#dce9e4}
+.parish-intro-grid{display:grid;grid-template-columns:1fr 1fr;gap:90px;align-items:start}
+.parish-intro h2,.parish-section-heading h2,.parish-schedule h2,.parish-contact h2{font:400 44px/1.1 Georgia,serif;margin:0}
+.parish-intro-grid>div:last-child>p{font-size:14px;line-height:1.8;color:#65736e;margin:0 0 18px}
+.parish-intro-grid .parish-lead{font:20px/1.55 Georgia,serif;color:var(--ink)}
+.parish-services{background:var(--deep);color:#fff}
+.parish-section-heading{text-align:center;margin-bottom:48px}
+.parish-section-heading h2{color:#fff}
+.parish-card-grid{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid #ffffff2b}
+.parish-card-grid article{min-height:285px;padding:34px;border-right:1px solid #ffffff2b;transition:background-color .22s ease,transform .22s ease}
+.parish-card-grid article:last-child{border-right:0}
+.parish-card-grid article:hover{background:#ffffff0a;transform:translateY(-3px)}
+.parish-card-grid article>span{display:grid;place-items:center;width:38px;height:38px;border:1px solid var(--gold);border-radius:50%;color:var(--gold);margin-bottom:34px}
+.parish-card-grid small{font-size:11px;font-weight:700;letter-spacing:.14em;color:var(--gold)}
+.parish-card-grid h3{font:400 25px/1.2 Georgia,serif;margin:10px 0 14px}
+.parish-card-grid p{font-size:14px;line-height:1.7;color:#bfd0ca;margin:0}
+.parish-schedule{background:var(--gold)}
+.parish-schedule-grid{display:grid;grid-template-columns:.8fr 1fr;gap:100px;align-items:center}
+.parish-schedule h2{margin-bottom:18px}
+.parish-schedule-grid>div:first-child>p:last-child{font-size:14px;line-height:1.7}
+.schedule-list{border-top:1px solid #87672f66}
+.schedule-list>div{display:flex;justify-content:space-between;align-items:center;gap:30px;padding:21px 4px;border-bottom:1px solid #87672f66}
+.schedule-list span{font-size:11px;font-weight:700;letter-spacing:.13em}
+.schedule-list b{font:400 21px Georgia,serif}
+.parish-contact{text-align:center;background:var(--cream)}
+.parish-contact .eyebrow:before{display:none}
+.parish-contact h2{max-width:700px;margin:0 auto 18px}
+.parish-contact>div>p:not(.eyebrow){max-width:610px;margin:0 auto 28px;font-size:14px;line-height:1.7;color:#65736e}
+.parish-contact-grid{display:grid;grid-template-columns:repeat(3,1fr);max-width:900px;margin:0 auto 32px;border:1px solid var(--line);background:#fff;text-align:left}
+.parish-contact-grid article{display:grid;grid-template-columns:38px 1fr;gap:3px 14px;align-items:center;padding:25px 28px;border-right:1px solid var(--line)}
+.parish-contact-grid article:last-child{border-right:0}
+.parish-contact-grid article>span{grid-row:1/3;display:grid;place-items:center;width:38px;height:38px;border:1px solid var(--gold);border-radius:50%;color:#a77729}
+.parish-contact-grid small{font-size:10px;font-weight:700;letter-spacing:.12em;color:#75827d}
+.parish-contact-grid strong,.parish-contact-grid a{font-size:13px;color:var(--ink);text-decoration:none}
+.parish-contact-grid a{transition:color .2s ease}
+.parish-contact-grid a:hover{color:#a77729}
+@media(max-width:800px){.parish-hero{height:560px}.parish-hero h1{font-size:48px}.parish-intro-grid,.parish-schedule-grid{grid-template-columns:1fr;gap:42px}.parish-card-grid{grid-template-columns:1fr}.parish-card-grid article{border-right:0;border-bottom:1px solid #ffffff2b}.parish-card-grid article:last-child{border-bottom:0}}
+@media(max-width:700px){.parish-contact-grid{grid-template-columns:1fr}.parish-contact-grid article{border-right:0;border-bottom:1px solid var(--line)}.parish-contact-grid article:last-child{border-bottom:0}}
+@media(max-width:600px){.parish-hero{height:520px}.parish-hero h1{font-size:40px}.parish-back{margin-bottom:48px}.parish-intro h2,.parish-section-heading h2,.parish-schedule h2,.parish-contact h2{font-size:36px}}
