@@ -711,6 +711,12 @@ nav button {
   line-height: 2;
   color: #687670;
 }
+.whatsapp-icon {
+  display: inline-block;
+  width: 1.1em;
+  height: 1.1em;
+  vertical-align: -0.18em;
+}
 .contacts a {
   color: var(--ink);
 }
