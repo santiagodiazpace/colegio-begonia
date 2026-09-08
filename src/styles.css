@@ -163,3 +163,10 @@
 .school-contact-data a:hover{color:#a77729}
 @media(max-width:800px){.school-detail-hero-grid{grid-template-columns:1fr}.school-detail-emblem{display:none}.school-detail-hero h1{font-size:48px}.school-about-grid,.school-pillars-grid{grid-template-columns:1fr;gap:42px}.school-level-card-grid{grid-template-columns:1fr}.school-level-card-grid article{border-right:0;border-bottom:1px solid #ffffff2c}.school-level-card-grid article:last-child{border-bottom:0}.school-contact-data{grid-template-columns:1fr}.school-contact-data>span{border-right:0;border-bottom:1px solid var(--line)}.school-contact-data>span:last-child{border-bottom:0}}
 @media(max-width:600px){.school-detail-hero{min-height:480px}.school-detail-hero h1{font-size:40px}.school-back{margin-bottom:48px}.school-about h2,.school-section-heading h2,.school-pillars h2,.school-detail-contact h2{font-size:36px}}
+
+.begonia-page .school-detail-hero{background:#527b92}
+.begonia-emblem{background:#ffffffed;border-color:#fff;box-shadow:0 0 0 18px #ffffff12}
+.begonia-emblem img{width:112px;height:112px;object-fit:contain}
+.begonia-level-grid{grid-template-columns:repeat(4,1fr)}
+@media(max-width:950px){.begonia-level-grid{grid-template-columns:repeat(2,1fr)}.begonia-level-grid article:nth-child(2){border-right:0}.begonia-level-grid article:nth-child(-n+2){border-bottom:1px solid #ffffff2c}}
+@media(max-width:600px){.begonia-level-grid{grid-template-columns:1fr}.begonia-level-grid article:nth-child(2){border-right:0}.begonia-level-grid article{border-right:0;border-bottom:1px solid #ffffff2c}.begonia-level-grid article:last-child{border-bottom:0}}
