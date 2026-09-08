@@ -117,3 +117,49 @@
 @media(max-width:800px){.parish-hero{height:560px}.parish-hero h1{font-size:48px}.parish-intro-grid,.parish-schedule-grid{grid-template-columns:1fr;gap:42px}.parish-card-grid{grid-template-columns:1fr}.parish-card-grid article{border-right:0;border-bottom:1px solid #ffffff2b}.parish-card-grid article:last-child{border-bottom:0}}
 @media(max-width:700px){.parish-contact-grid{grid-template-columns:1fr}.parish-contact-grid article{border-right:0;border-bottom:1px solid var(--line)}.parish-contact-grid article:last-child{border-bottom:0}}
 @media(max-width:600px){.parish-hero{height:520px}.parish-hero h1{font-size:40px}.parish-back{margin-bottom:48px}.parish-intro h2,.parish-section-heading h2,.parish-schedule h2,.parish-contact h2{font-size:36px}}
+
+.school-detail-page{background:#fff}
+.school-detail-hero{min-height:510px;position:relative;overflow:hidden;display:flex;align-items:center;background:var(--green);color:#fff}
+.school-detail-pattern{position:absolute;inset:0;background-image:linear-gradient(135deg,#ffffff08 25%,transparent 25%),linear-gradient(315deg,#ffffff08 25%,transparent 25%);background-size:72px 72px;background-position:0 0,36px 36px}
+.school-detail-hero-grid{position:relative;display:grid;grid-template-columns:1fr auto;gap:70px;align-items:center}
+.school-back{display:inline-flex;margin-bottom:62px;color:#e0ece7;font-size:11px;font-weight:700;letter-spacing:.1em;text-decoration:none;transition:color .2s ease,transform .2s ease}
+.school-back:hover{color:var(--gold);transform:translateX(-3px)}
+.school-detail-hero h1{max-width:760px;font:400 60px/1.04 Georgia,serif;letter-spacing:-.035em;margin:0 0 22px}
+.school-detail-hero-copy>p:last-child{max-width:590px;font-size:16px;line-height:1.7;color:#d7e6e0}
+.school-detail-emblem{display:grid;place-items:center;width:170px;height:170px;border:1px solid #ffffff70;border-radius:50%;font:400 52px Georgia,serif;color:var(--gold);box-shadow:0 0 0 18px #ffffff08}
+.school-about-grid{display:grid;grid-template-columns:1fr 1fr;gap:90px;align-items:start}
+.school-about h2,.school-section-heading h2,.school-pillars h2,.school-detail-contact h2{font:400 44px/1.1 Georgia,serif;margin:0}
+.school-about-grid>div:last-child>p{font-size:14px;line-height:1.8;color:#65736e;margin:0 0 18px}
+.school-about-grid .school-about-lead{font:20px/1.55 Georgia,serif;color:var(--ink)}
+.school-levels-detail{background:var(--deep);color:#fff}
+.school-section-heading{text-align:center;max-width:680px;margin:0 auto 46px}
+.school-section-heading h2{color:#fff;margin-bottom:16px}
+.school-section-heading>p:last-child{font-size:14px;line-height:1.7;color:#bdcdc7}
+.school-level-card-grid{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid #ffffff2c}
+.school-level-card-grid article{min-height:280px;padding:34px;border-right:1px solid #ffffff2c;transition:background-color .22s ease,transform .22s ease}
+.school-level-card-grid article:last-child{border-right:0}
+.school-level-card-grid article:hover{background:#ffffff0a;transform:translateY(-3px)}
+.school-level-card-grid article>span{display:grid;place-items:center;width:38px;height:38px;border:1px solid var(--gold);border-radius:50%;color:var(--gold);margin-bottom:34px}
+.school-level-card-grid small{font-size:11px;font-weight:700;letter-spacing:.14em;color:var(--gold)}
+.school-level-card-grid h3{font:400 25px/1.2 Georgia,serif;margin:10px 0 14px}
+.school-level-card-grid p{font-size:14px;line-height:1.7;color:#bfd0ca;margin:0}
+.school-pillars{background:var(--cream)}
+.school-pillars-grid{display:grid;grid-template-columns:.8fr 1fr;gap:100px}
+.school-pillar-list{border-top:1px solid var(--line)}
+.school-pillar-list article{position:relative;padding:22px 0 22px 42px;border-bottom:1px solid var(--line)}
+.school-pillar-list article:before{content:'✦';position:absolute;left:4px;top:22px;color:#a77729}
+.school-pillar-list b{font-size:15px}
+.school-pillar-list p{font-size:14px;line-height:1.65;color:#687670;margin:5px 0 0}
+.school-detail-contact{text-align:center}
+.school-detail-contact .eyebrow:before{display:none}
+.school-detail-contact h2{max-width:700px;margin:0 auto 18px}
+.school-detail-contact>div>p:not(.eyebrow){max-width:620px;margin:0 auto 30px;font-size:14px;line-height:1.7;color:#65736e}
+.school-contact-data{display:grid;grid-template-columns:repeat(3,1fr);max-width:940px;margin:0 auto 32px;border:1px solid var(--line);text-align:left}
+.school-contact-data>span{display:flex;flex-direction:column;gap:7px;padding:24px 28px;border-right:1px solid var(--line)}
+.school-contact-data>span:last-child{border-right:0}
+.school-contact-data small{font-size:10px;font-weight:700;letter-spacing:.12em;color:#78847f}
+.school-contact-data b,.school-contact-data a{font-size:13px;color:var(--ink);text-decoration:none}
+.school-contact-data a{transition:color .2s ease}
+.school-contact-data a:hover{color:#a77729}
+@media(max-width:800px){.school-detail-hero-grid{grid-template-columns:1fr}.school-detail-emblem{display:none}.school-detail-hero h1{font-size:48px}.school-about-grid,.school-pillars-grid{grid-template-columns:1fr;gap:42px}.school-level-card-grid{grid-template-columns:1fr}.school-level-card-grid article{border-right:0;border-bottom:1px solid #ffffff2c}.school-level-card-grid article:last-child{border-bottom:0}.school-contact-data{grid-template-columns:1fr}.school-contact-data>span{border-right:0;border-bottom:1px solid var(--line)}.school-contact-data>span:last-child{border-bottom:0}}
+@media(max-width:600px){.school-detail-hero{min-height:480px}.school-detail-hero h1{font-size:40px}.school-back{margin-bottom:48px}.school-about h2,.school-section-heading h2,.school-pillars h2,.school-detail-contact h2{font-size:36px}}
