@@ -131,7 +131,7 @@
 .school-about-grid{display:grid;grid-template-columns:1fr 1fr;gap:90px;align-items:start}
 .school-about h2,.school-section-heading h2,.school-pillars h2,.school-detail-contact h2{font:400 44px/1.1 Georgia,serif;margin:0}
 .school-about-grid>div:last-child>p{font-size:14px;line-height:1.8;color:#65736e;margin:0 0 18px}
-.school-about-grid .school-about-lead{font:20px/1.55 Georgia,serif;color:var(--ink)}
+.school-about-grid .school-about-lead{font:400 14px/1.8 'DM Sans',Arial,sans-serif;color:#65736e}
 .school-levels-detail{background:var(--deep);color:#fff}
 .school-section-heading{text-align:center;max-width:680px;margin:0 auto 46px}
 .school-section-heading h2{color:#fff;margin-bottom:16px}
@@ -186,3 +186,27 @@
 .begonia-level-grid{grid-template-columns:repeat(4,1fr)}
 @media(max-width:950px){.begonia-level-grid{grid-template-columns:repeat(2,1fr)}.begonia-level-grid article:nth-child(2){border-right:0}.begonia-level-grid article:nth-child(-n+2){border-bottom:1px solid #ffffff2c}}
 @media(max-width:600px){.begonia-level-grid{grid-template-columns:1fr}.begonia-level-grid article:nth-child(2){border-right:0}.begonia-level-grid article{border-right:0;border-bottom:1px solid #ffffff2c}.begonia-level-grid article:last-child{border-bottom:0}}
+
+.families-page{background:#fff}
+.families-hero{padding:72px 0 78px;background:var(--cream);border-bottom:1px solid var(--line);text-align:center}
+.families-hero .back-link{display:table;margin:0 0 54px;text-align:left}
+.families-hero .eyebrow:before,.families-heading .eyebrow:before{display:none}
+.families-hero h1{max-width:800px;margin:0 auto 20px;font:400 56px/1.08 Georgia,serif;letter-spacing:-.03em}
+.families-hero>div>p:last-child{max-width:620px;margin:0 auto;color:#65736e;font-size:15px;line-height:1.7}
+.families-heading{margin-bottom:38px;text-align:center}
+.families-heading h2{margin:0;font:400 44px/1.1 Georgia,serif}
+.family-options{display:grid;max-width:980px;margin:0 auto;border:1px solid var(--line)}
+.family-options>a{display:grid;grid-template-columns:54px 1fr auto;grid-template-rows:auto auto;column-gap:24px;align-content:center;min-height:138px;padding:26px 30px;border-bottom:1px solid var(--line);color:var(--ink);text-decoration:none;transition:transform .2s ease,box-shadow .2s ease}
+.family-options>a:last-child{border-bottom:0}
+.family-options>a:nth-child(1){background:#f8f4ec}
+.family-options>a:nth-child(2){background:#edf5f2}
+.family-options>a:nth-child(3){background:#fbf1df}
+.family-options>a:nth-child(4){background:#edf4f7}
+.family-options>a:nth-child(5){background:#f1f4f0}
+.family-options>a:hover{z-index:1;transform:translateX(4px);box-shadow:0 10px 26px #172d2818}
+.family-option-icon{display:grid;grid-row:1/3;width:44px;height:44px;place-items:center;align-self:center;border-radius:50%;background:#e2ece8}
+.family-option-icon img{width:23px;height:23px;object-fit:contain}
+.family-option-arrow{grid-column:3;grid-row:1/3;align-self:center;font-size:18px}
+.family-options h3{grid-column:2;margin:0 0 8px;font:400 24px/1.2 Georgia,serif}
+.family-options p{grid-column:2;margin:0;color:#65736e;font-size:14px;line-height:1.55}
+@media(max-width:600px){.families-hero{padding:48px 0 58px}.families-hero .back-link{margin-bottom:38px}.families-hero h1{font-size:40px}.families-heading h2{font-size:36px}.family-options>a{grid-template-columns:44px 1fr auto;column-gap:16px;min-height:130px;padding:22px 20px}.family-options h3{font-size:21px}}

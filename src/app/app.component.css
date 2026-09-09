@@ -441,36 +441,29 @@ nav button {
   grid-template-columns: repeat(5, 1fr);
   border: 1px solid var(--line);
 }
-.quick > a {
+.quick > article {
   min-height: 225px;
   padding: 29px 25px;
   border-right: 1px solid var(--line);
   position: relative;
-  text-decoration: none;
-  transition: 0.2s;
 }
-.quick > a:last-child {
+.quick > article:last-child {
   border: 0;
 }
-.quick > a:nth-child(1) {
+.quick > article:nth-child(1) {
   background-color: #f7f4ed;
 }
-.quick > a:nth-child(2) {
+.quick > article:nth-child(2) {
   background-color: #eef4f1;
 }
-.quick > a:nth-child(3) {
+.quick > article:nth-child(3) {
   background-color: #f7f0e3;
 }
-.quick > a:nth-child(4) {
+.quick > article:nth-child(4) {
   background-color: #edf2f5;
 }
-.quick > a:nth-child(5) {
+.quick > article:nth-child(5) {
   background-color: #f1f3ef;
-}
-.quick > a:hover {
-  background: var(--deep);
-  color: #fff;
-  transform: translateY(-4px);
 }
 .quick i {
   width: 43px;
@@ -485,19 +478,19 @@ nav button {
   background-repeat: no-repeat;
   background-size: 25px;
 }
-.quick > a:nth-child(1) i {
+.quick > article:nth-child(1) i {
   background-image: url("../assets/iconos/inscripciones.svg");
 }
-.quick > a:nth-child(2) i {
+.quick > article:nth-child(2) i {
   background-image: url("../assets/iconos/pagos.svg");
 }
-.quick > a:nth-child(3) i {
+.quick > article:nth-child(3) i {
   background-image: url("../assets/iconos/documentacion.svg");
 }
-.quick > a:nth-child(4) i {
+.quick > article:nth-child(4) i {
   background-image: url("../assets/iconos/calendario.svg");
 }
-.quick > a:nth-child(5) i {
+.quick > article:nth-child(5) i {
   background-image: url("../assets/iconos/reuniones.svg");
 }
 .quick h3 {
@@ -508,11 +501,6 @@ nav button {
   font-size: 12px;
   line-height: 1.55;
   color: #6e7a75;
-}
-.quick b {
-  position: absolute;
-  right: 24px;
-  top: 28px;
 }
 .center {
   text-align: center;
@@ -907,7 +895,7 @@ footer {
   .news {
     grid-template-columns: 1fr;
   }
-  .quick > a {
+  .quick > article {
     border-right: 0;
     border-bottom: 1px solid var(--line);
   }

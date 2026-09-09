@@ -117,19 +117,21 @@
       <div class="title-row">
         <div>
           <p class="eyebrow">INFORMACIÓN ÚTIL</p>
-          <h2>Accesos rápidos para familias</h2>
+          <h2>Acceso para familias</h2>
         </div>
         <p>Todo lo que necesitás, en un solo lugar.</p>
       </div>
       <div class="quick">
         @for (item of quickLinks; track item[1]) {
-          <a href="#contacto"
-            ><i></i>
+          <article>
+            <i></i>
             <h3>{{ item[1] }}</h3>
             <p>{{ item[2] }}</p>
-            <b>↗</b></a
-          >
+          </article>
         }
+      </div>
+      <div class="center">
+        <a class="btn dark hero-action" routerLink="/familias">IR A FAMILIAS</a>
       </div>
     </div>
   </section>

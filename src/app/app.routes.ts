@@ -6,6 +6,7 @@ import { CalendarComponent } from './calendar.component';
 import { ParishComponent } from './parish.component';
 import { MartinRodriguezComponent } from './martin-rodriguez.component';
 import { BegoniaComponent } from './begonia.component';
+import { FamiliesComponent } from './families.component';
 
 export const routes: Routes = [
   { path: '', component: HomeComponent, title: 'Unidades Académicas' },
@@ -38,6 +39,11 @@ export const routes: Routes = [
     path: 'begonia',
     component: BegoniaComponent,
     title: 'Colegio Nuestra Señora de Begoña | Unidades Académicas',
+  },
+  {
+    path: 'familias',
+    component: FamiliesComponent,
+    title: 'Familias | Unidades Académicas',
   },
   { path: '**', redirectTo: '' },
 ];
