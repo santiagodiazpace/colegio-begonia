@@ -573,13 +573,6 @@ nav button {
   color: #b9cac4;
   line-height: 1.6;
 }
-.level-grid a {
-  position: absolute;
-  right: 25px;
-  bottom: 30px;
-  color: var(--gold);
-  text-decoration: none;
-}
 .news {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;
@@ -716,6 +709,11 @@ nav button {
   width: 1.1em;
   height: 1.1em;
   vertical-align: -0.18em;
+}
+.contacts span.whatsapp-icon {
+  background-color: #687670;
+  -webkit-mask: url("../assets/iconos/whatsapp.svg") center / contain no-repeat;
+  mask: url("../assets/iconos/whatsapp.svg") center / contain no-repeat;
 }
 .contacts a {
   color: var(--ink);

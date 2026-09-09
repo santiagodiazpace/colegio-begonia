@@ -151,10 +151,15 @@
 .school-pillar-list article:before{content:'✦';position:absolute;left:4px;top:22px;color:#a77729}
 .school-pillar-list b{font-size:15px}
 .school-pillar-list p{font-size:14px;line-height:1.65;color:#687670;margin:5px 0 0}
-.school-detail-contact{text-align:center}
+.school-detail-contact{text-align:center;padding-bottom:42px}
 .school-detail-contact .eyebrow:before{display:none}
 .school-detail-contact h2{max-width:700px;margin:0 auto 18px}
 .school-detail-contact>div>p:not(.eyebrow){max-width:620px;margin:0 auto 30px;font-size:14px;line-height:1.7;color:#65736e}
+.section.school-location{padding-top:0;text-align:center}
+.school-location .eyebrow:before{display:none}
+.school-location h2{font:400 44px/1.1 Georgia,serif;margin:0 0 30px}
+.school-location-map{max-width:980px;margin:0 auto;overflow:hidden;border:1px solid var(--line);background:var(--cream)}
+.school-location-map iframe{display:block;width:100%;height:370px;border:0}
 .school-contact-data{display:grid;grid-template-columns:repeat(3,1fr);max-width:940px;margin:0 auto 32px;border:1px solid var(--line);text-align:left}
 .school-contact-data>span{display:flex;flex-direction:column;gap:7px;padding:24px 28px;border-right:1px solid var(--line)}
 .school-contact-data>span:last-child{border-right:0}
@@ -165,7 +170,7 @@
 .parish-contact-grid .contact-address,.school-contact-data .contact-address{font-size:13px;font-weight:400}
 @media(min-width:701px){.parish-contact-grid .contact-address{white-space:nowrap}}
 @media(max-width:800px){.school-detail-hero-grid{grid-template-columns:1fr}.school-detail-emblem{display:none}.school-detail-hero h1{font-size:48px}.school-about-grid,.school-pillars-grid{grid-template-columns:1fr;gap:42px}.school-level-card-grid{grid-template-columns:1fr}.school-level-card-grid article{border-right:0;border-bottom:1px solid #ffffff2c}.school-level-card-grid article:last-child{border-bottom:0}.school-contact-data{grid-template-columns:1fr}.school-contact-data>span{border-right:0;border-bottom:1px solid var(--line)}.school-contact-data>span:last-child{border-bottom:0}}
-@media(max-width:600px){.school-detail-hero{min-height:480px}.school-detail-hero h1{font-size:40px}.school-back{margin-bottom:48px}.school-about h2,.school-section-heading h2,.school-pillars h2,.school-detail-contact h2{font-size:36px}}
+@media(max-width:600px){.school-detail-hero{min-height:480px}.school-detail-hero h1{font-size:40px}.school-back{margin-bottom:48px}.school-about h2,.school-section-heading h2,.school-pillars h2,.school-detail-contact h2,.school-location h2{font-size:36px}.school-detail-contact{padding-bottom:32px}.school-location-map iframe{height:300px}}
 
 .begonia-page .school-detail-hero{background:#527b92}
 .begonia-emblem{background:#ffffffed;border-color:#fff;box-shadow:0 0 0 18px #ffffff12}
