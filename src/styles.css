@@ -5,6 +5,7 @@
 .school.green .photo>small{display:none}
 .identity .identity-img{background:url("assets/images/comunidad.png") center/cover no-repeat}
 .identity .identity-img>small{display:none}
+.news .news-card-image{display:block;width:100%;height:100%;object-fit:cover}
 
 .institutional-detail{background:#fff;scroll-margin-top:108px;border-top:1px solid var(--line)}
 .detail-page{background:#fff}
@@ -43,7 +44,8 @@
 .news-archive-grid{display:grid;grid-template-columns:1fr;gap:24px}
 .news-archive-grid>article{display:grid;grid-template-columns:40% 1fr;background:#fff;border:1px solid var(--line);transition:transform .22s ease,box-shadow .22s ease}
 .news-archive-grid>article:hover{transform:translateY(-3px);box-shadow:0 16px 36px #17382f14}
-.news-archive-image{min-height:280px;display:grid;place-items:center;color:#68756f;font-size:11px}
+.news-archive-image{position:relative;min-height:280px;display:grid;place-items:center;overflow:hidden;color:#68756f;font-size:11px}
+.news-archive-image img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .news-archive-copy{padding:30px;display:flex;flex-direction:column;align-items:flex-start}
 .news-archive-copy>small{width:100%;font-size:12px;font-weight:700;color:var(--green)}
 .news-archive-copy time{float:right;color:#7f8a85}
@@ -82,6 +84,7 @@
 .institutional-hero{background-image:url("assets/images/obispado-azul.png");background-position:center 54%}
 .martin-hero{background-image:url("assets/images/inst-mar-rodriguez.png");background-position:center}
 .begonia-hero{background-image:url("assets/images/begonia.png");background-position:center}
+.families-photo-hero{background-image:url("assets/images/familia.png");background-position:center}
 .martin-hero-copy-text>p:last-child{max-width:590px;font-size:17px;line-height:1.7;color:#dce9e4}
 .martin-hero-logo{position:absolute;z-index:1;top:50%;right:max(48px,calc((100vw - 1160px)/2 - 30px));display:grid;place-items:center;width:190px;height:190px;padding:30px;background:#fffffff2;border-radius:50%;box-shadow:0 0 0 14px #1d40382e,0 14px 36px #0b241e70;transform:translateY(-50%)}
 .martin-hero-logo img{display:block;width:100%;height:100%;object-fit:contain}

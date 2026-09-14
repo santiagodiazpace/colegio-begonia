@@ -12,6 +12,7 @@ export class NewsComponent {
       category: 'Institucional',
       date: '12 AGO 2027',
       title: 'Una jornada para encontrarnos y celebrar',
+      image: 'assets/noticias/noticia-1.png',
       summary:
         'Compartimos una nueva experiencia junto a estudiantes, docentes y familias de nuestra comunidad.',
     },
@@ -19,6 +20,7 @@ export class NewsComponent {
       category: 'Begoña · Nivel Primario',
       date: '08 AGO 2027',
       title: 'Aprender haciendo: nuevos proyectos en el aula',
+      image: 'assets/noticias/noticia-2.png',
       summary:
         'Propuestas que invitan a investigar, crear y construir aprendizajes significativos en equipo.',
     },
@@ -26,6 +28,7 @@ export class NewsComponent {
       category: 'Martín Rodríguez · Nivel Secundario',
       date: '02 AGO 2027',
       title: 'Estudiantes que transforman su comunidad',
+      image: 'assets/noticias/noticia-3.png',
       summary:
         'Iniciativas que fortalecen el compromiso, la participación y el vínculo con nuestra ciudad.',
     },
@@ -33,6 +36,7 @@ export class NewsComponent {
       category: 'Begoña · Nivel Inicial',
       date: '28 JUL 2027',
       title: 'Aprender, jugar y compartir en comunidad',
+      image: '',
       summary:
         'Una jornada llena de propuestas creativas para descubrir, expresarse y crecer junto a otros.',
     },

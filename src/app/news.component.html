@@ -16,7 +16,11 @@
         @for (item of news; track item.title; let i = $index) {
           <article [class.featured]="i === 0">
             <div class="placeholder news-archive-image">
-              <small>IMAGEN DE LA NOTICIA</small>
+              @if (item.image) {
+                <img [src]="item.image" alt="" />
+              } @else {
+                <small>IMAGEN DE LA NOTICIA</small>
+              }
             </div>
             <div class="news-archive-copy">
               <small>{{ item.category }} <time>{{ item.date }}</time></small>

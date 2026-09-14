@@ -173,7 +173,13 @@
       <div class="news">
         @for (item of news; track item[2]; let i = $index) {
           <article [class.featured]="i === 0">
-            <div class="placeholder"><small>IMAGEN DE LA NOTICIA</small></div>
+            <div class="placeholder">
+              <img
+                class="news-card-image"
+                [src]="'assets/noticias/noticia-' + (i + 1) + '.png'"
+                alt=""
+              />
+            </div>
             <section>
               <small
                 >{{ item[0] }} <time>{{ item[1] }}</time></small
