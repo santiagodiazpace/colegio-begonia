@@ -1110,7 +1110,16 @@ footer {
   text-align: left;
 }
 
-/* Logo de Begoña en reemplazo de los distintivos circulares NB. */
+/* Logos institucionales en reemplazo de los distintivos circulares. */
+.school.green .photo i {
+  width: 58px;
+  height: 58px;
+  border: 0;
+  border-radius: 0;
+  color: transparent;
+  background: url("../assets/logos/inst-mar-rodriguez-logo.png") center / contain no-repeat;
+}
+
 .school.blue .photo i,
 .contacts > article > i.blue {
   border: 0;

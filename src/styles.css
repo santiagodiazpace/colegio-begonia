@@ -1,4 +1,10 @@
 :root{--ink:#172d28;--green:#315e52;--deep:#1d4038;--cream:#f7f4ed;--gold:#d5aa5c;--blue:#35566b;--line:#dce0dc}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);font-family:'DM Sans',Arial,sans-serif}a{color:inherit}.shell{width:min(1160px,calc(100% - 48px));margin:auto}
+.school.blue .photo{background:url("assets/images/unid-begonia.png") center/cover no-repeat}
+.school.blue .photo>small{display:none}
+.school.green .photo{background:url("assets/images/unid-rodriguez.png") center/cover no-repeat}
+.school.green .photo>small{display:none}
+.identity .identity-img{background:url("assets/images/comunidad.png") center/cover no-repeat}
+.identity .identity-img>small{display:none}
 
 .institutional-detail{background:#fff;scroll-margin-top:108px;border-top:1px solid var(--line)}
 .detail-page{background:#fff}
