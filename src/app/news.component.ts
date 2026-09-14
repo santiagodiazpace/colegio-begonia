@@ -36,7 +36,7 @@ export class NewsComponent {
       category: 'Begoña · Nivel Inicial',
       date: '28 JUL 2027',
       title: 'Aprender, jugar y compartir en comunidad',
-      image: '',
+      image: 'assets/noticias/noticia-4.png',
       summary:
         'Una jornada llena de propuestas creativas para descubrir, expresarse y crecer junto a otros.',
     },
