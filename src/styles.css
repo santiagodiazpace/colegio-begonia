@@ -73,6 +73,12 @@
 
 .parish-page{background:#fff}
 .parish-hero{height:620px;position:relative;display:flex;align-items:center;color:#fff;background:url("assets/images/parroquia_begonia.png") center/cover no-repeat}
+.institutional-hero{background-image:url("assets/images/obispado-azul.png");background-position:center 54%}
+.martin-hero{background-image:url("assets/images/inst-mar-rodriguez.png");background-position:center}
+.begonia-hero{background-image:url("assets/images/begonia.png");background-position:center}
+.martin-hero-copy-text>p:last-child{max-width:590px;font-size:17px;line-height:1.7;color:#dce9e4}
+.martin-hero-logo{position:absolute;z-index:1;top:50%;right:max(48px,calc((100vw - 1160px)/2 - 30px));display:grid;place-items:center;width:190px;height:190px;padding:30px;background:#fffffff2;border-radius:50%;box-shadow:0 0 0 14px #1d40382e,0 14px 36px #0b241e70;transform:translateY(-50%)}
+.martin-hero-logo img{display:block;width:100%;height:100%;object-fit:contain}
 .parish-shade{position:absolute;inset:0;background:linear-gradient(90deg,#142f29e8 0%,#173b32a8 48%,#173b3224 78%)}
 .parish-hero-copy{position:relative;padding-top:24px}
 .parish-back{display:inline-flex;margin-bottom:74px;color:#e8f1ed;font-size:11px;font-weight:700;letter-spacing:.1em;text-decoration:none;transition:transform .2s ease,color .2s ease}
@@ -115,7 +121,7 @@
 .parish-contact-grid strong,.parish-contact-grid a{font-size:13px;color:var(--ink);text-decoration:none}
 .parish-contact-grid a{transition:color .2s ease}
 .parish-contact-grid a:hover{color:#a77729}
-@media(max-width:800px){.parish-hero{height:560px}.parish-hero h1{font-size:48px}.parish-intro-grid,.parish-schedule-grid{grid-template-columns:1fr;gap:42px}.parish-card-grid{grid-template-columns:1fr}.parish-card-grid article{border-right:0;border-bottom:1px solid #ffffff2b}.parish-card-grid article:last-child{border-bottom:0}}
+@media(max-width:800px){.parish-hero{height:560px}.parish-hero h1{font-size:48px}.martin-hero-logo{top:14px;right:28px;width:72px;height:72px;padding:11px;box-shadow:0 0 0 6px #1d40382e,0 8px 20px #0b241e66;transform:none}.parish-intro-grid,.parish-schedule-grid{grid-template-columns:1fr;gap:42px}.parish-card-grid{grid-template-columns:1fr}.parish-card-grid article{border-right:0;border-bottom:1px solid #ffffff2b}.parish-card-grid article:last-child{border-bottom:0}}
 @media(max-width:700px){.parish-contact-grid{grid-template-columns:1fr}.parish-contact-grid article{border-right:0;border-bottom:1px solid var(--line)}.parish-contact-grid article:last-child{border-bottom:0}}
 @media(max-width:600px){.parish-hero{height:520px}.parish-hero h1{font-size:40px}.parish-back{margin-bottom:48px}.parish-intro h2,.parish-section-heading h2,.parish-schedule h2,.parish-contact h2{font-size:36px}}
 
@@ -184,10 +190,11 @@
 @media(max-width:600px){.school-detail-hero{min-height:480px}.school-detail-hero h1{font-size:40px}.school-back{margin-bottom:48px}.school-about h2,.school-section-heading h2,.school-pillars h2,.school-detail-contact h2,.school-location h2{font-size:36px}.school-detail-contact{padding-bottom:32px}.school-location-map iframe{height:300px}}
 
 .begonia-page .school-detail-hero{background:#527b92}
-.begonia-emblem{background:#ffffffed;border-color:#fff;box-shadow:0 0 0 18px #ffffff12}
+.begonia-emblem{position:absolute;top:50%;right:max(48px,calc((100vw - 1160px)/2));background:#ffffffed;border-color:#fff;box-shadow:0 0 0 18px #ffffff12;transform:translateY(-50%)}
 .begonia-emblem img{width:112px;height:112px;object-fit:contain}
 .begonia-level-grid{grid-template-columns:repeat(4,1fr)}
 @media(max-width:950px){.begonia-level-grid{grid-template-columns:repeat(2,1fr)}.begonia-level-grid article:nth-child(2){border-right:0}.begonia-level-grid article:nth-child(-n+2){border-bottom:1px solid #ffffff2c}}
+@media(max-width:800px){.begonia-emblem{display:grid;top:14px;right:28px;width:72px;height:72px;box-shadow:0 0 0 6px #ffffff1f,0 8px 20px #243d4866;transform:none}.begonia-emblem img{width:48px;height:48px}}
 @media(max-width:600px){.begonia-level-grid{grid-template-columns:1fr}.begonia-level-grid article:nth-child(2){border-right:0}.begonia-level-grid article{border-right:0;border-bottom:1px solid #ffffff2c}.begonia-level-grid article:last-child{border-bottom:0}}
 
 .families-page{background:#fff}
