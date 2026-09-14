@@ -438,7 +438,7 @@ nav button {
 }
 .quick {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   border: 1px solid var(--line);
 }
 .quick > article {
@@ -464,6 +464,9 @@ nav button {
 }
 .quick > article:nth-child(5) {
   background-color: #f1f3ef;
+}
+.quick > article:nth-child(6) {
+  background-color: #f4f1f6;
 }
 .quick i {
   width: 43px;
@@ -492,6 +495,9 @@ nav button {
 }
 .quick > article:nth-child(5) i {
   background-image: url("../assets/iconos/reuniones.svg");
+}
+.quick > article:nth-child(6) i {
+  background-image: url("../assets/iconos/uniformes.svg");
 }
 .quick h3 {
   font-size: 22px;

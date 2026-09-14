@@ -13,6 +13,7 @@ export class HomeComponent {
     ['assets/iconos/documentacion.svg', 'Documentación', 'Circulares y archivos para descargar'],
     ['assets/iconos/calendario.svg', 'Calendario', 'Fechas importantes del ciclo lectivo'],
     ['assets/iconos/reuniones.svg', 'Reuniones', 'Solicitar reunión'],
+    ['assets/iconos/uniformes.svg', 'Uniformes', 'Modelos, talles y puntos de venta'],
   ];
 
   levels = [
@@ -34,4 +35,3 @@ export class HomeComponent {
     ['03', 'OCT', 'Nuestra Señora de Begoña', 'Celebración de la comunidad'],
   ];
 }
-

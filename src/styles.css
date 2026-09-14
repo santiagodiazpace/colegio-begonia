@@ -203,6 +203,7 @@
 .family-options>a:nth-child(3){background:#fbf1df}
 .family-options>a:nth-child(4){background:#edf4f7}
 .family-options>a:nth-child(5){background:#f1f4f0}
+.family-options>a:nth-child(6){background:#f4f1f6}
 .family-options>a:hover{z-index:1;transform:translateX(4px);box-shadow:0 10px 26px #172d2818}
 .family-option-icon{display:grid;grid-row:1/3;width:44px;height:44px;place-items:center;align-self:center;border-radius:50%;background:#e2ece8}
 .family-option-icon img{width:23px;height:23px;object-fit:contain}
