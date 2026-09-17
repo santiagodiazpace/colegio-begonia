@@ -1,3 +1,4 @@
+<div id="site-top"></div>
 <header [class.open]="menuOpen">
   <div class="utility"></div>
   <nav class="shell">
@@ -17,6 +18,13 @@
   </nav>
 </header>
 <router-outlet></router-outlet>
+<div class="back-to-top">
+  <div class="shell">
+    <a class="text-link" href="#site-top" aria-label="Subir al inicio de la página">
+      ARRIBA <span aria-hidden="true">&uarr;</span>
+    </a>
+  </div>
+</div>
 <footer>
   <div class="shell footer-grid">
     <div>
