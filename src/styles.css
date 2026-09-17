@@ -6,6 +6,7 @@
 .identity .identity-img{background:url("assets/images/comunidad.png") center/cover no-repeat}
 .identity .identity-img>small{display:none}
 .news .news-card-image{display:block;width:100%;height:100%;object-fit:cover}
+.contacts .contact-logo{display:block;width:58px;height:58px;object-fit:contain}
 .back-to-top{background:var(--cream);padding:0 0 32px}
 app-families + .back-to-top{background:#fff}
 .back-to-top .shell{display:flex;justify-content:flex-end}
@@ -90,6 +91,11 @@ app-families + .back-to-top{background:#fff}
 
 .parish-page{background:#fff}
 .parish-hero{height:620px;position:relative;display:flex;align-items:center;color:#fff;background:url("assets/images/parroquia_begonia.png") center/cover no-repeat}
+.home-hero{background-image:url("assets/images/inicio-hero.png")}
+.home-hero .hero-copy>p{max-width:590px;font-size:17px;line-height:1.7;color:#dce9e4;margin:0 0 31px}
+.home-hero .hero-action{margin-right:14px}
+.home-hero .hero-action:hover{background:#fffdf8}
+.admissions .hero-action:hover{background:#000;color:var(--gold)}
 .institutional-hero{background-image:url("assets/images/propuesta-inst.png")}
 .martin-hero{background-image:url("assets/images/inst-mar-rodriguez.png");background-position:center}
 .begonia-hero{background-image:url("assets/images/begonia.png");background-position:center}
