@@ -1,5 +1,20 @@
 # ColegioBegonia
 
+## GitHub Pages
+
+El sitio se publica en https://santiagodiazpace.github.io/colegio-begonia/.
+
+```bash
+npm run deploy:pages
+```
+
+Este comando compila para `/colegio-begonia/`, prepara `404.html` para las rutas
+de Angular y `.nojekyll`, y publica los archivos en la rama `gh-pages` sin
+cambiar la rama de trabajo. Requiere acceso de escritura al remoto `origin`.
+
+En GitHub, configurar **Settings → Pages → Deploy from a branch → gh-pages → /(root)**.
+Para compilar sin publicar, usar `npm run build:pages`.
+
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.6.
 
 ## Development server
