@@ -1024,10 +1024,12 @@ footer {
   transition: transform 0.22s ease;
 }
 .links > a:hover,
+.links > a.active,
 .links > span:hover > a {
   color: #a77a2d;
 }
-.links > a:hover::after {
+.links > a:hover::after,
+.links > a.active::after {
   transform: scaleX(1);
 }
 .links > span > a::before {
