@@ -2,13 +2,13 @@
 
 ## GitHub Pages
 
-El sitio se publica en https://santiagodiazpace.github.io/colegio-begonia/.
+El sitio se publica en https://santiagodiazpace.github.io/unidades-academicas/.
 
 ```bash
 npm run deploy:pages
 ```
 
-Este comando compila para `/colegio-begonia/`, prepara `404.html` para las rutas
+Este comando compila para `/unidades-academicas/`, prepara `404.html` para las rutas
 de Angular y `.nojekyll`, y publica los archivos en la rama `gh-pages` sin
 cambiar la rama de trabajo. Requiere acceso de escritura al remoto `origin`.
 

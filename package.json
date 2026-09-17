@@ -5,7 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "build:pages": "ng build --base-href /colegio-begonia/ && node scripts/prepare-pages.mjs",
+    "build:pages": "ng build --base-href /unidades-academicas/ && node scripts/prepare-pages.mjs",
     "deploy:pages": "npm run build:pages && node scripts/deploy-pages.mjs",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
